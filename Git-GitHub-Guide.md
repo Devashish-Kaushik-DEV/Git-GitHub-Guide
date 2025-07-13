@@ -1,16 +1,18 @@
 # Git & GitHub
 
-- **INDEX**
-    - Introduction
-    - Installation
-    - Basic Git Operations
-        - Stage & Commit Changes
-        - Modifying & Re-Committing files
-        - Restoring Staged Changes & Deletion
-        - View Commit History
-        - Stashing Changes
-        - Popping Stash
-        - Clearing Stash
+### **INDEX**
+
+- Introduction
+- Installation
+- Basic Git Operations
+    - Stage & Commit Changes
+    - Modifying & Re-Committing files
+    - Restoring Staged Changes & Deletion
+    - View Commit History
+    - Stashing Changes
+    - Popping Stash
+    - Clearing Stash
+- Publish local Repository over Github
 
 ---
 
@@ -239,3 +241,31 @@ Clear: Remove all Stashed entries entirely. This is irreversible so use with cau
 ```bash
 git stash clear
 ```
+
+---
+
+### **Publish local Repository over Github**
+
+**Push to GitHub**: To connect your local Git repository to a remote GitHub repository and push your changes
+
+- Browse to GitHub https://github.com/
+- Click on New Repository and create one
+- Provide repo name and other necessary details like Private/Public
+- Do not initialize with README (you already have local content)
+- Add the remote URL using:
+    
+    ```bash
+    git remote add origin https://github.com/your-username/my-project.git
+    ```
+    
+- Push Code to GitHub
+    
+    ```bash
+    git push -u origin main
+    ```
+    
+- Change Remote URL : If you need to change the GitHub URL later:
+    
+    ```bash
+    git remote set-url origin https://github.com/your-username/new-repo.git
+    ```
